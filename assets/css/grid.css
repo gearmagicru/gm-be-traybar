@@ -1,0 +1,24 @@
+/*!
+ * Сетка (Grid).
+ * 
+ * Модуль "Панель уведомлений".
+ *
+ * Copyright 2015 Вeб-студия GearMagic
+ * Copyright Anton Tivonenko <anton.tivonenko@gmail.com>
+ * https://gearmagic.ru/license/
+ */
+
+/* Заливка заднего фона сетки (см. идент. viewManager) */
+#gm-traybar-grid .x-grid-view {
+    background: url("../images/watermark.svg") no-repeat calc(100% - 25px) calc(100% - 20px);
+    background-size: 100px;
+}
+
+
+/**
+ * Ячейки сетки.
+ */
+ #gm-traybar-grid .x-grid-cell-inner i.icon-font {
+    color:#898989;
+    font-size:15px;
+}
