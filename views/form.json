@@ -1,0 +1,104 @@
+[
+    {
+        "xtype": "numberfield",
+        "minValue": "1",
+        "emptyText": "1",
+        "width": 165,
+        "name": "index",
+        "fieldLabel": "#Index",
+        "tooltip": "#Index number"
+    },
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Title",
+        "name": "title",
+        "anchor": "100%",
+        "allowBlank": false
+    },
+    {
+        "xtype": "label",
+        "ui": "header-line",
+        "text": "#Icon element"
+    },
+    {
+        "xtype": "radio",
+        "boxLabel": "#Icon",
+        "id": "gm-traybar-form__rfont",
+        "name": "iconType",
+        "inputValue": "font",
+        "checked": true,
+        "listeners": {
+            "change": "onCheckIcon"
+        }
+    },
+    {
+        "xtype": "radio",
+        "boxLabel": "#Image",
+        "id": "gm-traybar-form__rimage",
+        "name": "iconType",
+        "inputValue": "image",
+        "change": "onCheckIcon"
+    },
+    {
+        "xtype": "g-field-combobox",
+        "cls": "g-combo-fontawesome",
+        "fieldLabel": "#Icon",
+        "id": "gm-traybar-form__ffont",
+        "name": "iconFont",
+        "hiddenName": "iconFont",
+        "store": {
+            "fields": ["id", "name", "icon", "style"],
+            "data": "@faStoreData"
+        },
+        "forceSelection": true,
+        "displayField": "name",
+        "valueField": "id",
+        "queryMode": "local",
+        "typeAhead": true,
+        "editable": true,
+        "anchor": "100%",
+        "tpl": [
+            "<ul class=\"x-list-plain\">",
+                "<tpl for=\".\">",
+                    "<li role=\"option\" class=\"x-boundlist-item gm-traybar__boundlist-icon font-icon\">{icon} {name} <span>({style})</span></li>",
+                "</tpl>",
+            "</ul>"
+        ]
+    },
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Image",
+        "id": "gm-traybar-form__fimage",
+        "name": "iconImage",
+        "hidden": true,
+        "anchor": "100%"
+    },
+    {
+        "xtype": "label",
+        "ui": "header-line",
+        "text": "#Menu item handler"
+    },
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Name",
+        "tooltip": "#Handler name",
+        "name": "handler",
+        "anchor": "100%",
+        "allowBlank": false
+    },
+    {
+        "xtype": "textarea",
+        "fieldLabel": "#Arguments",
+        "tooltip": "#Arguments handler",
+        "name": "handlerArgs",
+        "anchor": "100%"
+    },
+    {
+        "xtype": "checkbox",
+        "ui": "switch",
+        "fieldLabel": "#visible",
+        "checked": true,
+        "name": "visible",
+        "inputValue": 1
+    }
+]
