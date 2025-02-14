@@ -1,13 +1,7 @@
 {
     "name": "gearmagicru/gm-be-traybar",
-    "description": "Control panel module \"Tray bar\"",
-    "keywords": [
-        "gm",
-        "gearmagic",
-        "GM Panel",
-        "module",
-        "traybar"
-    ],
+    "description": "Control Panel module \"Tray bar\"",
+    "keywords": ["gearmagic", "gm-panel", "gm-component", "gm-module", "module", "traybar"],
     "homepage": "https://apps.gearmagic.ru/component/gm-be-traybar",
     "type": "component",
     "license": "MIT",
